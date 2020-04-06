@@ -34,7 +34,7 @@ a {
     outline: none;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    color: #253b6e;
+    color: #0098da;
 }
 
 input:focus,
@@ -60,7 +60,7 @@ h6 {
     margin: 0 0 10px;
     font-family: 'league_spartanregular';
     line-height: 1.5;
-    color: #253b6e;
+    color: #0098da;
 }
 
 .sm-title {
@@ -119,7 +119,7 @@ input:-webkit-autofill:focus {
 }
 
 .gr-icon {
-    background: -webkit-linear-gradient(#1891ac, #253b6e);
+    background: -webkit-linear-gradient(#1891ac, #0098da);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -239,7 +239,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area.affix {
-    background-color: rgba(37, 59, 110, 0.7)
+    background-color: rgb(0, 152, 218)
 }
 
 #mainmenu ul.nav.navbar-nav li a {
@@ -257,7 +257,7 @@ input:-webkit-autofill:focus {
     border-bottom: 2px solid #ffffff;
     border-top: 2px solid #ffffff;
     background-color: #ffffff;
-    color: #5097a7;
+    color: #a9aaab;
 }
 
 #mainmenu ul.nav.navbar-nav li a:hover {
@@ -282,8 +282,8 @@ input:-webkit-autofill:focus {
 
 .appoinment-form {
     -webkit-box-shadow: 0 74px 50px -40px rgba(37, 59, 1100, 0.2);
-    box-shadow: 0 74px 50px -40px rgba(37, 59, 1100, 0.2);
-    color: #253b6e;
+    box-shadow: 0 59px 51px -34px rgba(109, 110, 112, 0.62);
+    color: #0098da;
     border-radius: 2px;
     margin-bottom: 40px;
 }
@@ -340,7 +340,7 @@ input:-webkit-autofill:focus {
     transition: 0.4s;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    color: #253b6e;
+    color: #0098da;
 }
 
 .about-panel .panel-title a.collapsed:after {
@@ -471,15 +471,15 @@ input:-webkit-autofill:focus {
 .single-facilities {
     text-align: center;
     padding: 30px;
-    color: #21537f;
+    color: #0098da;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     position: relative;
     z-index: 1;
     height: 300px;
-    box-shadow: 0 59px 51px -34px rgba(37, 59, 110, 0.52);
+    box-shadow: 0 59px 51px -34px rgba(109, 110, 112, 0.62);
     background: rgb(24, 144, 171);
-    background: radial-gradient(ellipse at center, rgba(24, 144, 171, 1) 0%, rgba(34, 81, 126, 1) 100%);
+    background: radial-gradient(ellipse at center, rgb(154, 155, 155) 0%, rgb(127, 129, 132) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1890ab', endColorstr='#22517e', GradientType=1);
     border-radius: 5px;
 }
@@ -509,7 +509,7 @@ input:-webkit-autofill:focus {
 
 .facilities-icon {
     margin-bottom: 20px;
-    color: #1d7396;
+    color: #818385;
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
@@ -660,7 +660,7 @@ input:-webkit-autofill:focus {
 .team-member .owl-controls .owl-dots .owl-dot.active {
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
-    background-color: #253b6e;
+    background-color: #0098da;
 }
 
 
@@ -820,7 +820,7 @@ input:-webkit-autofill:focus {
 }
 
 .social-list li a:hover {
-    color: #253b6e;
+    color: #0098da;
 }
 
 
@@ -829,7 +829,7 @@ input:-webkit-autofill:focus {
 -----------------*/
 
 #scrollUp {
-    background-color: #253b6e;
+    background-color: #0098da;
     border-radius: 3px;
     bottom: 40px;
     color: #ffffff;
