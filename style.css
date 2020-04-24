@@ -230,7 +230,7 @@ input:-webkit-autofill:focus {
 ---------------------*/
 
 .mainmenu-area {
-    background-color: rgba(37, 59, 110, 0.2);
+    background-color: #0098da75;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     margin: 0;
@@ -904,4 +904,23 @@ Preloader-Css
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
+}
+
+.slidercaption{
+    position:absolute; left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); 
+    color: #ffffff; 
+    font-size: 55px; 
+    opacity: 1; 
+    visibility: visible;
+    top: 40%;
+}
+
+.slidersubcaption{
+    position: absolute; 
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); 
+    top:50%
 }

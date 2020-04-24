@@ -27,7 +27,7 @@
         text-align: center !important;
     }
     .mainmenu-area {
-        background-color: rgba(37, 59, 110, 0.7);
+        background-color: #0098da75;
     }
     .mainmenu-area .navbar-toggle {
         border: 2px solid #ffffff;
@@ -43,6 +43,17 @@
     
     .appoinment-area {
         margin-top: 50px;
+    }
+
+    .slidercaption{
+        font-size: 30px;
+        width: 500px;
+
+    }
+
+    .slidersubcaption{
+        visibility: hidden;
+
     }
 }
 

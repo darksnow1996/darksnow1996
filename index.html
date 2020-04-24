@@ -82,9 +82,20 @@
 					============================================= -->
                 <li data-transition="slideright" data-slotamount="6" data-thumb="">
                     <img src="images/rs/bg1.jpg" alt="image" />
-                    <div class="caption sft big_white" data-x="260" data-y="260" data-speed="1500" data-start="1700" data-easing="easeOutExpo"><strong>welcome to agnosys</strong></div>
-                    <div class="caption sfb medium_grey text-center" data-x="140" data-y="350" data-speed="1500" data-start="2500" data-easing="easeOutExpo">Access Quality Care From the Comfort of Your Home and access to  some other text </div>
-                    <div class="caption sfb" data-x="492" data-y="440" data-speed="2000" data-start="3000" data-easing="easeOutExpo"><a href="#" class="btn btn-default">Read More</a></div>
+                    <div class="container text-white text-center">
+                        <h1 class="slidercaption"  data-x="260" data-y="260" data-speed="1500" data-start="1700" data-easing="easeOutExpo">
+                            Welcome To Agnosys
+                        </h1>
+                        <p class="slidersubcaption medium_grey text-center" data-x="140" data-y="350" data-speed="1500" data-start="2500" data-easing="easeOutExpo">
+                            Access Quality Care From the Comfort of Your Home and access to some other text
+                        </p>
+                    <!-- <div class="caption sft big_white" data-x="260" data-y="260" data-speed="1500" data-start="1700" data-easing="easeOutExpo">
+                        <strong>welcome to agnosys</strong></div>
+                    <div class="caption sfb medium_grey text-center" data-x="140" data-y="350" data-speed="1500" data-start="2500" data-easing="easeOutExpo">
+                        Access Quality Care From the Comfort of Your Home and access to  some other text </div> -->
+                    <div class="caption sfb" data-x="492" data-y="440" data-speed="2000" data-start="3000" data-easing="easeOutExpo"><a href="#contact" class="btn btn-default">
+                        Make an appointment</a></div>
+                        </div>
                 </li>
                 <!-- Slide Up
 					============================================= -->
@@ -100,18 +111,19 @@
                 <div class="col-xs-12 col-sm-6 padding-60">
                     <h3>Make An Appoinment</h3>
                     <hr>
-                    <form action="#">
+                    <div id="form-error"></div>
+                    <form action="#" id="contact-form">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
                         </div>
                         <div class="form-group">
                             <label for="email">E-Mail</label>
-                            <input type="text" class="form-control" placeholder="example@email.com" id="email">
+                            <input type="text" class="form-control" name="email" placeholder="example@email.com" id="email">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="5" class="form-control" placeholder="Write your message..."></textarea>
+                            <textarea name="message" id="message" name="message" rows="5" class="form-control" placeholder="Write your message..."></textarea>
                         </div>
                         <div class="space-15"></div>
                         <button type="submit" class="btn btn-primary sh-hover">Submit</button>
@@ -137,7 +149,7 @@
                             <td>
                                 <div class="icon-sm"><i class="fa fa-map-marker"></i></div>
                             </td>
-                            <td>2A Deji Odunuga street,
+                            <td>100232,
                                 <br> Anthony Village, Lagos</td>
                         </tr>
                     </table>
@@ -176,32 +188,7 @@
                     <div class="space-60"></div>
                     <h4><q>Highly Skilled Nursing Practitioners at Your Service</q></h4>
                     <div class="space-30"></div>
-                    <div class="panel-group about-panel" id="accordion">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <p class="panel-title"><a class="" data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span class="gr-icon icon-md pull-left flaticon-medal"></span> Experienced Physician</a></p>
-                            </div>
-                            <div id="collapse1" class="panel-collapse collapse in">
-                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloribus, debitis repudiandae dolores eaque ipsum voluptatem architecto neque eum minus autem corporis, magnam modi ducimus, maiores assumenda! Hic vitae quibusdam at modi dignissimos libero doloribus praesentium, repellendus. Voluptate ut vero magni quidem dolorem dolorum, ipsam expedita soluta odit nesciunt ea?</div>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <p class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class="gr-icon icon-md pull-left flaticon-hospital-buildings"></span> Complete Health Facilities</a></p>
-                            </div>
-                            <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloribus, debitis repudiandae dolores eaque ipsum voluptatem architecto neque eum minus autem corporis, magnam modi ducimus, maiores assumenda! Hic vitae quibusdam at modi dignissimos libero doloribus praesentium, repellendus. Voluptate ut vero magni quidem dolorem dolorum, ipsam expedita soluta odit nesciunt ea?</div>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <p class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span class="gr-icon icon-md pull-left flaticon-syringe"></span> Medical Standard Equipment</a></p>
-                            </div>
-                            <div id="collapse3" class="panel-collapse collapse">
-                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloribus, debitis repudiandae dolores eaque ipsum voluptatem architecto neque eum minus autem corporis, magnam modi ducimus, maiores assumenda! Hic vitae quibusdam at modi dignissimos libero doloribus praesentium, repellendus. Voluptate ut vero magni quidem dolorem dolorum, ipsam expedita soluta odit nesciunt ea?</div>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <div class="space-20"></div>
                 </div>
                 <div class="hidden-xs col-sm-4 right-side-image">
@@ -226,7 +213,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-3">
                     <div class="single-facilities">
                         <div class="facilities-icon">
                             <span class="flaticon-tooth"></span>
@@ -236,7 +223,7 @@
                     </div>
                     <div class="space-30"></div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-3">
                     <div class="single-facilities">
                         <div class="facilities-icon">
                             <span class="flaticon-tablet-and-pill"></span>
@@ -246,7 +233,7 @@
                     </div>
                     <div class="space-30"></div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-3">
                     <div class="single-facilities">
                         <div class="facilities-icon">
                             <span class="flaticon-disability"></span>
@@ -256,7 +243,7 @@
                     </div>
                     <div class="space-30"></div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-3">
                     <div class="single-facilities">
                         <div class="facilities-icon">
                             <span class="flaticon-technology"></span>
@@ -266,26 +253,8 @@
                     </div>
                     <div class="space-30"></div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single-facilities">
-                        <div class="facilities-icon">
-                            <span class="flaticon-hospital-ambulance"></span>
-                        </div>
-                        <div class="sm-title">Ambulance</div>
-                        <p>Lorem ipsum dolor sit in faucibus ipsum. Cras euismod </p>
-                    </div>
-                    <div class="space-30"></div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single-facilities">
-                        <div class="facilities-icon">
-                            <span class="flaticon-medical"></span>
-                        </div>
-                        <div class="sm-title">Radiology</div>
-                        <p>Lorem ipsum dolor sit in faucibus ipsum. Cras euismod </p>
-                    </div>
-                    <div class="space-30"></div>
-                </div>
+              
+               
             </div>
             <div class="space-30"></div>
             <div class="text-center">
@@ -333,7 +302,9 @@
     </footer>
     <!--Footer-Area / -->
     <!--Vendor-JS-->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <!--Plugin-JS-->
     <script src="js/owl.carousel.min.js"></script>
@@ -342,7 +313,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/plugins.js"></script>
     <!--Google-Maps-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTS_KEDfHXYBslFTI_qPJIybDP3eceE-A&amp;sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSCp-5lZ64QORjM5ssZ1Vo5LLhpCeOl70"></script>
     <script src="js/maps.js"></script>
     <!--Themepunce-Plugin-->
     <script src="js/themepunch.plugins.min.js"></script>

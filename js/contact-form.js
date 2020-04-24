@@ -11,34 +11,42 @@ Ajax Contact Form
 + https://github.com/mehedidb/Ajax_Contact_Form
 */
 
-(function ($, window, document, undefined) {
-    'use strict';
+$(document).ready(function () {  
+    //'use strict';
 
     var $form = $('#contact-form');
 
     $form.submit(function (e) {
+        e.preventDefault();
+      //  console.log('im gehrljfl');
         // remove the error class
         $('.form-group').removeClass('has-error');
         $('.help-block').remove();
 
         // get the form data
-        var formData = {
-            'name' : $('input[name="form-name"]').val(),
-            'email' : $('input[name="form-email"]').val(),
-            'subject' : $('input[name="form-subject"]').val(),
-            'message' : $('textarea[name="form-message"]').val()
-        };
+        // var formData = {
+        //     'name' : 'damola',
+        //     'email' : $('input[name="email"]').val(),
+        //     // 'subject' : $('input[name="subject"]').val(),
+        //     'message' : $('textarea[name="message"]').val()
+        // };
+
+       let formData = $('#contact-form').serialize();
+        let data = $(this).serialize();
+      //  alert(formData.email);
 
         // process the form
         $.ajax({
-            type : 'POST',
-            url  : 'process.php',
+            method : 'POST',
+            url  : 'appointment.php',
             data : formData,
             dataType : 'json',
             encode : true
         }).done(function (data) {
             // handle errors
+            console.log('done');
             if (!data.success) {
+                $('#form-error').html('<div class="alert alert-danger">' + data.message + '</div>');
                 if (data.errors.name) {
                     $('#name-field').addClass('has-error');
                     $('#name-field').find('.col-lg-10').append('<span class="help-block">' + data.errors.name + '</span>');
@@ -59,14 +67,16 @@ Ajax Contact Form
                     $('#message-field').find('.col-lg-10').append('<span class="help-block">' + data.errors.message + '</span>');
                 }
             } else {
+            //   alert('passed');
                 // display success message
                 $form.html('<div class="alert alert-success">' + data.message + '</div>');
             }
         }).fail(function (data) {
             // for debug
+          //  alert('fail')
             console.log(data)
         });
 
-        e.preventDefault();
+        
     });
-}(jQuery, window, document));
+});

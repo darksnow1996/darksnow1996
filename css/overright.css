@@ -56,10 +56,10 @@ Button-Edit
 }
 
 .btn.btn-default {
-    color: #5097a7
+    color: #0098da
 }
 .btn.btn-default:hover {
-    background-color: #5097a7;
+    background-color: #0098da;
     color: #ffffff;
 }
 
